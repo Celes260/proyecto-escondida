@@ -30,7 +30,7 @@
 
         </div>
         <div id="divDesarrollado">
-            <p>Desarrollado por Celestino Moreno Rodríguez</p>
+            <p>Desarrollado por Celestino Moreno Rodríguez prueba</p>
         </div>
 
     </footer>
