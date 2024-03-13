@@ -1,0 +1,90 @@
+#titulo{
+    text-align: center;
+    font-size: 40px;
+}
+#divPrincipalRegistro{
+    display: flex;
+    width: 100%;
+    height: 82vh;
+    justify-content: center;
+    
+}
+#registroFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+}
+#divGeneralCampos{
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+height: 81%;
+
+
+}
+
+.camposRegistro{
+    width: 350px;
+    height: 60px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: 25px;
+    margin-top: 25px;
+   
+}
+#submitRegistro{
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #42B72A;
+    border: 1px solid #226315;
+    border-radius: 10px;
+    font-size: 25px;
+}
+#submitRegistro:hover{
+    background-color: #328a20;
+    
+}
+.campos{
+    display: flex;
+    width: 50%;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media screen and (max-width:724px){
+    #divGeneralCampos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+    }
+
+    #divPrincipalRegistro{
+        height: 1000px;
+    }
+
+    .camposRegistro{
+        margin-top: 30px;
+
+
+    }
+    #inp-nbr{
+        margin-top: 0px ;
+    }
+    .campos{
+        height: auto;
+
+    }
+
+
+}
+

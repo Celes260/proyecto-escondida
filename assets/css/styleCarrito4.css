@@ -1,0 +1,127 @@
+#divCarrito{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#divCarrito h2{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+
+.divTablaCarrito{
+    display: flex;
+    flex-direction: column;
+  
+    width: 80%;
+    height: 60%;
+    align-items: center;
+   
+}
+
+.info-carrito{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.info-carrito p{
+    font-size: 25px;
+
+}
+.divTablaCarrito table{
+    text-align: center;
+    width: 100%;
+
+    border: 1px solid #555;
+    margin-top: 30px;
+}
+
+.div-pedido{
+    overflow: scroll !important;
+ 
+
+
+}
+
+td{
+    border-top: 1px solid #555;
+    font-size: 30px;
+    padding: 2px;
+    text-align: center;
+    
+}
+.eliminarMenu{
+    display: block;
+    width: 115px;
+    height: 28px;
+    background-color: red;
+    border-radius:  5px;
+    font-size: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#confirmar{
+    display: block;
+    width: 87%;
+    height: 35px;
+    background-color: #277B25;
+    border-radius:  5px;
+    font-size: 25px;
+}
+#divCarrito .boton{
+    display: block;
+    background-color: #277B25;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.imagenesCarrito{
+    width: 150px;
+    height: 150px;
+
+}
+.botonesCarrito{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#vaciarCarrito{
+    margin-left: 50px;
+}
+
+.enlacePedido{
+    color: rgb(39, 112, 136) !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:580px) {
+    .f-pedido{
+        font-size: 20px;
+        
+    }
+
+}
+
+@media screen and (max-width:433px) {
+    .f-pedido{
+        font-size: 16px;
+        
+    }
+
+}
+

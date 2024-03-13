@@ -1,0 +1,21 @@
+#formCalendario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border-bottom: none;
+    
+    
+}
+#calendario{
+    width: 30%;
+    height: 50px;
+    font-size: 25px;
+   
+}
+#divMenu a{
+    color: black;
+  justify-content: center;
+}

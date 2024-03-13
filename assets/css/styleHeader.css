@@ -1,0 +1,229 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    outline: none;
+   
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F9F9;
+    
+
+}
+/* Estilos del header */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vh;
+    background-color: #040402;
+    
+}
+
+#header-f{
+    display: none;
+}
+#logo-menu{
+    display: none;
+}
+#ul-menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+
+}
+#header ul li{
+    display: flex;
+    margin-left: 50px;
+    color: white;
+    font-size: 25px;
+}
+#header ul li a{
+    font-size: 25px;
+    display: flex;
+    color: white;
+}
+#header ul li a:hover{
+    color: #ccbb83;
+}
+#logo{
+    width: 80px;
+}
+
+#ulAdmin{
+    display: none !important;
+    
+}
+#ulCliente{
+    display: none !important;
+    
+}
+nav ul>li:hover #ulAdmin{
+    position: absolute; 
+    display: block !important;
+    width: 250px;
+    height: 80px;
+    
+    z-index: 1;
+    background-color: #040402;
+    transform: all 300ms;
+    color: white;
+    margin-left: -50px;
+    z-index: 1;
+   
+    margin-top:30px;
+    text-align: right;
+}
+nav ul>li:hover #ulCliente{
+    position: absolute; 
+    display: block !important;
+    width: 250px;
+    height: 120px;
+    
+    z-index: 1;
+    background-color: #040402;
+    transform: all 300ms;
+    color: white;
+    margin-left: -50px;
+    z-index: 1;
+   
+    margin-top:30px;
+    text-align: right;
+}
+
+
+nav ul>li:hover #ulAdmin a:first-child{
+    color: white;
+    margin-top: 8px;
+    
+
+}
+nav ul>li:hover #ulAdmin a:hover{
+    color: #ccbb83;
+  
+    
+
+}
+
+.bx-menu{
+    display: none;
+    color: white;
+    font-size: 50px;
+
+}
+
+.bx-x{
+    display: block;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 100px;
+
+}
+
+/* header responsive */
+@media screen and (max-width:1021px){
+    /* Responsive mobiles header */
+    .bx-menu{
+        display: block;
+        margin-right: 20px;
+        position: absolute;
+        z-index: 1;
+    
+    }
+
+    
+    .menuActive{
+        display: block !important;
+        flex-direction: column;
+        
+
+
+    }
+
+    .headerActive{
+        height: 250px !important;
+           transition: all .5s ease;
+           border-radius: 0 0 30px 30px;
+
+    }
+
+    #ul-menu{
+        display: none ;
+        width: 262px;
+       
+    }
+
+    #ul-logo{
+        display: none !important;
+
+
+    }
+
+    #nav ul li{
+        font-size: 35px;
+        margin-top: 13px;
+        
+    }
+    #nav{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      
+    }
+
+  
+
+    #header{
+       justify-content: end;
+       position: fixed;
+       z-index: 2;
+      
+
+    
+    
+    }
+
+    #logo-menu{
+        display: block;
+        width: 110px;
+        height: 11vh;
+
+
+    }
+    .ocultar{
+        display: none !important;
+       
+
+    }
+    
+    nav ul>li:hover #ulCliente{
+        height: 200px;
+        transition: all .5s ease;
+        margin-top: 50px;
+        border-radius: 0 0 30px 30px;
+    }
+    #header-f{
+        display: block;
+        width: 100%;
+        height: 12vh;
+
+
+    }
+
+   
+
+    
+
+
+
+   
+}
+
+

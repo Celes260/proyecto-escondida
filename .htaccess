@@ -1,0 +1,9 @@
+<ifModule mod_rewrite.c>
+    RewriteEngine on
+    ErrorDocument 404 https://escondidasantasmarias.site/index.php/error/
+    RewriteCond %{SCRIPT_FILENAME} !-d
+    RewriteCond %{SCRIPT_FILENAME} !-f
+
+    RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+
+</ifModule>

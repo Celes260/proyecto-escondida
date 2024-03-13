@@ -1,0 +1,299 @@
+/* Fin de los estilos del header */
+
+/* Inicio de los estilos de la imagen principal */
+
+.slider{
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+   
+}
+
+
+.swiper-slide  img{
+    width: 100%;
+    height: 88vh;
+}
+
+.swiper-slide {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.centrado{
+    display: block;
+    position: absolute;
+    font-size: 50px;
+    top: 10%;
+    left: 50%;
+    transform: (-50%, -50%);
+    color: white;
+}
+
+
+/* Fin de los estilos de la imagen principal */
+/* inicio de primera seccion  */
+#articleIntroduccion{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    
+    
+  
+}
+#imagenesArticleIntroduccion{
+    display: flex;
+    width:45%;
+    height: 500px;
+   margin-left: 70px;
+   
+  
+   
+}
+#divNoche{
+width: 50%;
+height: 100%;
+
+}
+#divDobleImagen{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+   
+}
+#escondidaNoche{
+    width: 100%;
+    height: 100%;
+}
+#imagenBowl{
+    width: 95%;
+    height: 240px;
+    margin-left: 17px;
+}
+#imagenAlitas{
+    width: 95%;
+    height: 240px;
+    margin-left: 17px;
+    margin-top: 20px;
+    
+}
+#divTxtIntro{
+    width: 40%;
+    height: 500px;
+    
+    margin-left: 60px;
+}
+#articleIntroduccion h2{
+    font-size: 32px;
+    text-align: justify;
+    line-height: 1.5em;
+} 
+.p-inicio{
+    font-size: 30px;
+    text-align: justify;
+    line-height: 1.5em;
+    color: #888888;
+}
+ #divGeneralIntroduccion{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+   
+} 
+
+
+/* Finde la primera seccion */
+
+/*incio de la seccion de imperdibles  */
+
+#articleImperdibles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    
+}
+#divTituloImperdibles{
+    width: 400px;
+    margin-bottom: 20px;
+}
+#divTituloImperdibles h3{
+    text-align: center;
+    font-size: 35px;
+
+}
+#divTituloImperdibles img{
+    width: 100%;
+}
+#divImgImperdibles{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    
+   
+}
+.imgImperdibles{
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    
+}
+.claseImgImperdibles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33333333333%;
+    height: 600px;
+    margin-left: 60px;
+  
+
+}
+h4{
+    font-size: 35px;
+
+}
+/* fin de seccion de imperdibles */
+
+/* Inicio de responsive de la seccion de inicio */
+@media screen and (max-width: 1315px){
+
+    .p-inicio{
+        font-size: 27px;
+      
+    }
+    
+
+}
+@media screen and (max-width:1230px){
+    .imgImperdibles {
+        width: 280px;
+        height: 280px;
+
+    }
+
+}
+
+@media screen and (max-width:1089px){
+    .p-inicio{
+        font-size: 25px;
+     
+    }
+
+
+
+
+}
+
+@media screen and (max-width:1021px){
+    .imgImperdibles{
+        width: 200px;
+        height: 200px;
+
+
+    }
+
+   
+
+
+
+    #divGeneralIntroduccion {
+        height: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+        justify-content: start;
+    
+    }
+    #divNoche {
+        display: none;
+    
+    }
+    #imagenesArticleIntroduccion {
+        width: 100%;
+        margin-left: 0px;
+        justify-content: center;
+        height: 283px;
+      
+    }
+
+    #divDobleImagen {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    #imagenAlitas {
+        display: none;
+    }
+
+    #divTxtIntro {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 90%;
+        margin-left: 0px;
+        height: 50%;
+        
+    }
+
+    .img-itr{
+        width: 250px !important;
+        height: 250px !important;
+        border-radius: 15px;
+
+
+    }
+
+    #articleIntroduccion h2{
+        line-height: 30px;
+        font-size: 32px;
+
+
+    }
+    #articleIntroduccion{
+        height: 100%;
+        justify-content: center;
+        
+
+    }
+
+    #divImgImperdibles{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: start;
+        
+
+    }
+
+    #articleImperdibles{
+       height: 1650px; 
+    }
+
+    .imgImperdibles {
+        width: 350px;
+        height: 350px;
+    }
+    .claseImgImperdibles {
+        margin-left: 0px;
+    }
+    .p-imperdibles{
+        width: 250px;
+
+    }
+
+
+
+} 

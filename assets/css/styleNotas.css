@@ -1,0 +1,71 @@
+#divMenu{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+#divMenu h2{
+    margin-top: 20px;
+    font-size: 40px;
+}
+select{
+    width: 200px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.divTabla{
+    overflow: scroll;
+    width: 95%;
+    height: 50%;
+}
+.divTabla table{
+    text-align: center;
+    width: 100%;
+    
+    border: 1px solid #555;
+    margin-top: 30px;
+}
+td{
+    border-top: 1px solid #555;
+    border-left: 1px solid #555;
+    padding: 2px;
+    
+}
+.eliminarMenu{
+    display: block;
+    width: 80%;
+    height: 20px;
+    background-color: red;
+    border-radius:  5px;
+}
+#divMenu .boton{
+    display: block;
+    background-color: #040402;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.botonesNota{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    
+}
+.botonesNota a{
+    margin-left: 100px;
+    
+    
+}
+.cuenta{
+    color: green;
+    font-size: 35px;
+}

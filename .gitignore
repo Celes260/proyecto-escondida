@@ -1,0 +1,3 @@
+#vamos a ignorar la configuracion de la base de datos y la variable base_url
+db.php
+parameters.php

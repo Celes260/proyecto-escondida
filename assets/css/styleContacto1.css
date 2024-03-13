@@ -1,0 +1,193 @@
+
+
+/* estilos del article principal */
+#articleContacto{
+width: 100%;
+height: 100vh;
+background-image: url("http://localhost/curso/proyectoEscondida/assets/imagenes/escondidaNoche.jpg");
+background-size: 50%;
+
+}
+#h2Contacto{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+}
+
+#divGeneral{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+#divSub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* estilos mapa */
+#divMapa{
+    display: flex;
+    width: 50%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    background-color: white;
+
+}
+#divMapa iframe{
+    width: 90%;
+    height: 90%;
+}
+/* fin de estilos mapa */
+
+/* Estilos informacion */
+
+#divInfo{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 75%;
+    align-items: center;
+    background-color: white;
+}
+#divInfoImagen{
+    
+    width: 80%;
+    height: 200px;
+    margin-top: 30px;
+}
+#divInfoImagen img{
+    width: 100%;
+    height: 100%;
+  
+}
+#divInfoTxt{
+    width: 80%;
+    height: 200px;
+    margin-top: 30px;
+
+}
+#divInfoTxt p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* fin estilos informacion */
+
+/* Inicio de footer */
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 655px;
+    background-color: #040402;
+
+}
+#divLogoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+   
+}
+#divLogoFooter img{
+    width: 150px;
+}
+
+#divInfoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.claseFooter{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+    width: 33.33333333%;
+    height: 100%;
+   
+}
+.claseFooter iframe{
+    width: 80%;
+    height: 350px;
+    margin-top: 30px;
+}
+ .claseFooter h4{
+    color: white;
+    font-size: 35px;
+}
+#divHorario p{
+    margin-top: 60px;
+
+    font-size: 30px;
+    color: white;
+}
+#divContacto p, a{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: transparent;
+}
+#divContacto a:hover {
+ color: white;
+ transition: 500ms;
+}
+#divContacto p:hover{
+    color: white;
+    transition: 500ms;
+   }
+
+
+#divDesarrollado{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    border-top: 1px solid white;
+    
+}
+#divDesarrollado p{
+   text-align: center;
+   color: white;
+   font-size: 30px;
+}
+
+.pngRedes{
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1140px){
+    #divMapa{
+      display: none;
+    }
+
+    #divInfoImagen img {
+        width: 100%;
+        height: 114%;
+    }
+
+    #divInfo{
+        width: 80%;
+        
+    }
+
+
+}
+

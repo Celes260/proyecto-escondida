@@ -1,0 +1,34 @@
+
+/* Inicio del sidebar */
+#divGeneralAdministrador{
+    display: flex;
+    width: 100%;
+    height: 88vh;
+ 
+}
+#asideAdministrador{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
+    
+}
+.Opciones{
+    display: flex;
+width: 100%;
+height: 20%;
+border-bottom: 1px solid black;
+background-color: #EBEBEB;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+cursor: pointer;
+
+}
+.Opciones p{
+    color: black;
+}
+.Opciones:hover{
+    background-color: #b1b1b1;
+}

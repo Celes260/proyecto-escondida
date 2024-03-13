@@ -1,0 +1,187 @@
+#divCobrar{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    
+    text-align: center;
+    font-size: 25px;
+
+
+}
+.subCobrar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    
+
+}
+.cobrarCategorias{
+    width: 20%;
+    height: 100%; 
+    border-right: 1px solid black;
+
+}
+.tituloCobrarCategoria {
+    display: flex;
+    width: 100%;
+    height: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+}
+.mesa{
+    display: flex;
+    color: black;
+    justify-content: center;
+    font-size: 40px;
+}
+.tituloCobrarCategoria-desayunos{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(78, 183, 113);
+   
+}
+.tituloCobrarCategoria-snack{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(166, 134, 72);
+   
+}
+.tituloCobrarCategoria-comidas{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(48, 116, 156);
+   
+}
+
+.tituloCobrarCategoria-cena{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(162, 95, 59);
+   
+}
+
+.tituloCobrarCategoria-bebidas{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(67, 154, 158);
+   
+   
+}
+
+
+
+
+.platilloCobrarCategoria-desayunos{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    color: black;
+    border-top: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(116, 234, 156);
+    justify-content: center;
+
+}
+
+.platilloCobrarCategoria-desayunos:hover{
+    background-color: rgb(78, 183, 113);
+
+}
+.platilloCobrarCategoria-snack{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    color: black;
+    border-top: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(211, 171, 91);
+    justify-content: center;
+
+}
+
+.platilloCobrarCategoria-snack:hover{
+    background-color: rgb(166, 134, 72);
+
+}
+
+.platilloCobrarCategoria-comidas{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    color: black;
+    border-top: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(62, 152, 204);
+    justify-content: center;
+
+}
+
+.platilloCobrarCategoria-comidas:hover{
+    background-color: rgb(48, 116, 156);
+
+}
+
+.platilloCobrarCategoria-cena{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    color: black;
+    border-top: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(217, 132, 86);
+    justify-content: center;
+
+}
+
+.platilloCobrarCategoria-cena:hover{
+    background-color: rgb(162, 95, 59);
+
+}
+
+.platilloCobrarCategoria-bebidas{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    color: black;
+    border-top: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(104, 225, 232);
+    justify-content: center;
+
+}
+
+.platilloCobrarCategoria-bebidas:hover{
+    background-color: rgb(67, 154, 158);
+
+}
+.tituloCat{
+    color: black;
+}
+
+
+
+

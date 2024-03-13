@@ -1,0 +1,177 @@
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    background-color: #040402;
+
+}
+#divLogoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+   
+}
+#divLogoFooter img{
+    width: 150px;
+}
+
+#divInfoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.claseFooter{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+    width: 33.33333333%;
+    height: 100%;
+   
+}
+.claseFooter iframe{
+    width: 80%;
+    height: 350px;
+    margin-top: 30px;
+}
+ .claseFooter h4{
+    color: white;
+    font-size: 30px;
+}
+#divHorario p{
+    margin-top: 60px;
+    color: white;
+    font-size: 30px;
+}
+#divContacto p, a{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: transparent;
+    font-size: 30px;
+}
+#divContacto a:hover {
+ color: white;
+ transition: 500ms;
+}
+#divContacto p:hover{
+    color: white;
+    transition: 500ms;
+   }
+
+
+#divDesarrollado{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    border-top: 1px solid white;
+    
+}
+#divDesarrollado p{
+   text-align: center;
+   color: white;
+   font-size: 30px;
+}
+
+.pngRedes{
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:1144px){
+
+    .p-footer{
+        font-size: 25px !important;
+        color: white;
+        
+    }
+
+}
+
+    @media screen and (max-width:1021px){
+        #divInfoFooter{
+            flex-direction: column;
+          
+        }
+    
+        #divLogoFooter{
+            display: none;
+        }
+        #footer{
+            height: 1100px;
+
+        }
+
+        .claseFooter{
+            width: 70%;
+
+        }
+
+        .pngRedes {
+            width: 77px; 
+            margin-right: 0px;
+         }
+         .p-footer {
+             font-size: 20px !important;
+         }
+         #divDesarrollado p {
+             font-size: 23px;
+             height: 23px;
+            
+         }
+     
+         #divDesarrollado {
+             display: flex;
+             height: 50px;
+             align-items: center;
+             justify-content: center;
+          
+     
+         }
+
+         #divHorario p{
+            margin-top: 22px;
+
+
+         }
+
+         .claseFooter h4 {
+            margin-top: 40px;
+         }
+
+        
+
+
+    }
+
+    @media screen and (max-width:500px){
+        .claseFooter{
+            width: 100%;
+
+
+        }
+
+        #divInfoFooter {
+            width: 100%;
+            background-color: #040402;
+         }
+        
+
+
+    }
+
+
+
+
+
+
+

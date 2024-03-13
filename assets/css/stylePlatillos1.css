@@ -1,0 +1,132 @@
+#generalPlatillos{
+    display: flex;
+    width: 100%;
+    min-height: 88vh;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  
+    
+    
+    
+}
+.tituloPlatillos{
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+  
+}
+.tituloPlatillos img{
+    width: 100%;
+    height: 35px;
+    
+}
+#contenidoMenu{
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 76vh;
+  
+}
+.categoriasMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    font-size: 25px;
+    overflow: visible;
+    
+
+}
+.categoriasMenu h3{
+    font-size: 32px;
+    color: #277B25;
+}
+
+
+.divPlatillo{
+    display: flex;
+    width: 90%;
+    height: auto;
+   
+    margin-top: 20px;
+  
+    border-top: 1px dotted black;
+}
+.divPlatillo p{
+   font-size: 27px;
+}
+.divImagen{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-right: 15px;
+}
+.divImagen img{
+    width: 120px;
+    height: 120px;
+   border-radius: 70px;
+}
+
+.descripcionPlatillo{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+  
+}
+.boton{
+    display: block;
+    width:100%;
+    height: 30px;
+    font-size: 22px;
+    background-color: #277B25;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:1500px) {
+    .divPlatillo{
+        
+        flex-direction: column;
+        align-items: center;
+        border-top: none;
+
+
+    }
+
+   
+
+    
+}
+
+@media screen and (max-width:1020px) {
+  
+    .h4-menu{
+        font-size: 25px;
+        text-align: center;
+    }
+    .divPlatillo p{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    
+}
+@media screen and (max-width:1020px) {
+    #contenidoMenu {
+        flex-direction: column;
+    }
+
+    .categoriasMenu {
+        width: 100%;
+    }
+
+    .divImagen {
+        justify-content: center;
+    }
+
+}
