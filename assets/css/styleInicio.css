@@ -297,3 +297,25 @@ h4{
 
 
 } 
+
+@media screen and (max-width:497px){
+    #divGeneralIntroduccion {
+       justify-content: end;
+    }
+
+    #articleIntroduccion{
+        height: 90%;
+    }
+
+    #divTituloImperdibles {
+        width: 370px;
+
+    }
+    #divTituloImperdibles h3{
+        font-size: 30px;
+    }
+
+
+
+
+}
