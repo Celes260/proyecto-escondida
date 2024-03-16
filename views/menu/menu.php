@@ -2,7 +2,7 @@
     <h2>Menu</h2>
 
     <select name="" id=""  onchange="window.location.href = this.value;" >
-        <option  value="<?=base_url?>menu/platillos"><a href="<?=base_url?>menu/platillos">Desayunos</a></option>
+        <option  value="<?=base_url?>Menu/platillos"><a href="<?=base_url?>menu/platillos">Desayunos</a></option>
         <option value="">Snacks</option>
         <option  value="">Bebidas</option>
         <option value="">Postres </option>
@@ -34,7 +34,7 @@
                 <td><?=$platillos->precio; ?>$</td>
                 <td><?=$platillos->descripcion; ?></td>
                 <td>
-                    <a href="<?=base_url?>menu/borrar&idMenu=<?=$platillos->idMenu?>" class="eliminarMenu">Eliminar</a>
+                    <a href="<?=base_url?>Menu/borrar&idMenu=<?=$platillos->idMenu?>" class="eliminarMenu">Eliminar</a>
                    
                 </td>
 
@@ -48,7 +48,7 @@
 
     </div>
 
-    <a href="<?=base_url?>menu/crearMenu" class="boton">crear platillo</a>
+    <a href="<?=base_url?>Menu/crearMenu" class="boton">crear platillo</a>
 
     <?php Utils::deleteSession("borrado"); 
           Utils::deleteSession("platilloGuardado"); 
