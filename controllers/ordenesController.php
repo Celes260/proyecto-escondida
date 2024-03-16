@@ -5,7 +5,7 @@ require_once 'models/Menu.php';
 
 class OrdenesController{
 
-    public static function cobrar()o
+    public static function cobrar()
         Utils::isAdmin();
 
         $menu = new Menu();
