@@ -3,7 +3,7 @@ require_once 'models/Ordenes.php';
 require_once 'models/Menu.php';
 
 
-class ordenesController{
+class OrdenesController{
 
     public static function cobrar(){
         Utils::isAdmin();
