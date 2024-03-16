@@ -37,7 +37,7 @@
             
             <ul id="ul-menu">
                 <li><a href="<?=base_url?>cliente/inicio">Inicio</a></li>
-                <li><a href="<?=base_url?>menu/platillos">Menú</a></li>
+                <li><a href="<?=base_url?>Menu/platillos">Menú</a></li>
              
 
                 <li id="ul-logo"><a href=""><img src="<?=base_url?>assets/imagenes/logoEscondida.jpeg" alt="imagen escondida" id="logo"></a>
