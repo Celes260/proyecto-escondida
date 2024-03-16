@@ -8,7 +8,7 @@
                 <p>pedido</p>
             </a>
 
-            <a href="<?=base_url?>menu/menu"  class="Opciones">
+            <a href="<?=base_url?>Menu/menu"  class="Opciones">
                 <p>Menu</p>
             </a>
 
