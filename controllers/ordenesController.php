@@ -1,6 +1,6 @@
 <?php
-require_once 'models/ordenes.php';
-require_once 'models/menu.php';
+require_once 'models/Ordenes.php';
+require_once 'models/Menu.php';
 
 
 class ordenesController{
