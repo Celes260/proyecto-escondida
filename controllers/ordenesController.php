@@ -1,11 +1,11 @@
 <?php
-require_once 'models/Ordenes.php';
+require_once 'models/ordenes.php';
 require_once 'models/Menu.php';
 
 
 class OrdenesController{
 
-    public static function cobrar(){
+    public static function cobrar()o
         Utils::isAdmin();
 
         $menu = new Menu();

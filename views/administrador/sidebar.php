@@ -12,7 +12,7 @@
                 <p>Menu</p>
             </a>
 
-            <a href="<?=base_url?>Ordenes/ventas" class="Opciones">
+            <a href="<?=base_url?>ordenes/ventas" class="Opciones">
                 <p>Ventas</p>
             </a>
             <a href="<?=base_url?>administrador/usuarios"  class="Opciones">
