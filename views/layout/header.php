@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleInicio.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleMesas.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleMenu1.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleCrearPlatillos1.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleCrearPlatillos.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/stylePlatillos1.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleCobrar.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleNotas.css">
