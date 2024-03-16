@@ -91,7 +91,7 @@ public function inicio(){
       $admins= $administrador->mostrarUsuarios();
 
       require_once 'views/administrador/sidebar.php';
-      require_once 'views/administrador/Usuarios.php';
+      require_once 'views/administrador/usuarios.php';
       
     }
     public function crearUsuario(){
