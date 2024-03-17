@@ -4,6 +4,7 @@ $(document).ready(function(){
     const header =$("#header");
     const navLink = $(".navLink");
     const logoMenu = $("#logo-menu");
+    const ulCliente =$("#ulCliente");
     var windowWidth = $(window).width();
   
   
@@ -18,17 +19,24 @@ $(document).ready(function(){
          menu.addClass("bx bx-menu ");
 
     });
-   
 
-    
-    // navLink.click(function(){
-    //     nav.removeClass("menu-active");
-    //     menu.removeClass("bx bx-x");
-    //     menu.addClass("bx bx-menu ");
-    // });
+    //codigo para hover ul cliente
+    $('#liCliente li').hide();
+
+    $('#liCliente').on('click', function(){
+      $('#liCliente li').show();
+      ulCliente.addClass("activeUlCliente");
+     
+    });
+
+    $(document).on('click', function(event) {
+      if (!$(event.target).closest('#liCliente').length) {
+        $('#ulCliente li').hide();
+        ulCliente.removeClass("activeUlCliente");
+      }
+    });
 
 
- 
 
 
     const swiper = new Swiper('.new-swiper', {

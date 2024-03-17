@@ -55,7 +55,7 @@
                             </ul>
                         </li>
                     <?php elseif(isset($_SESSION['clienteLogin'])): ?>
-                        <li><?=$_SESSION['identity']->nombre?>
+                        <li id="liCliente"><?=$_SESSION['identity']->nombre?>
                         <ul id="ulCliente">
                                 <li><a href="<?=base_url?>carrito/index">Carrito</a></li>
                                 <li><a href="<?=base_url?>ordenes/mostrarPedidosCliente">Pedidos</a></li>

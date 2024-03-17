@@ -62,7 +62,7 @@ body{
     
 }
 #ulCliente{
-    display: none !important;
+   
     
 }
 nav ul>li:hover #ulAdmin{
@@ -81,7 +81,7 @@ nav ul>li:hover #ulAdmin{
     margin-top:30px;
     text-align: right;
 }
-nav ul>li:hover #ulCliente{
+.activeUlCliente{
     position: absolute; 
     display: block !important;
     width: 250px;
