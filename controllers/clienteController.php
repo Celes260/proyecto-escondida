@@ -113,7 +113,9 @@ class clienteController{
                       //metodo que indica que los campos estan correctos para la creacion de usuario
                       //aqui se verifica el email
                       
+                      $codigo= mt_rand(10000000, 99999999);
                       require_once 'mailer.php';
+                      require_once 'views/clientes/verificacionCodigo.php';
                       
 
 
@@ -166,6 +168,13 @@ class clienteController{
           $upd = $cliente->getOne();
           require_once 'views/clientes/registro.php';
 
+
+
+        }
+
+
+        public function verificacionCodigo(){
+           $cliente = new cliente();
 
 
         }

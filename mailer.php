@@ -17,7 +17,7 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = 2;                      //Enable verbose debug output
+    $mail->SMTPDebug = 0;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -37,12 +37,12 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'prueba de envio emails';
-    $mail->Body    = 'jala masiso</b>';
+    $mail->Subject = 'Verificacion de email';
+    $mail->Body    = "Este es el código de verificación de un solo uso que solicitaste: '{$codigo}'. Si ya recibiste este código o ya no lo necesitas, puedes ignorar este correo electrónico</b>";
   
 
     $mail->send();
-    echo 'Message has been sent';
+   
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

@@ -1,0 +1,46 @@
+#bx-generalVerificacion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 88vh;   
+    align-items: center;
+    padding-top: 70px;
+   
+}
+
+#bx-generalVerificacion h3, p{
+    font-size: 30px;
+   
+
+}
+#bx-generalVerificacion p{
+    margin-top: 10px;
+
+}
+#txtCodigo{
+    font-size: 25px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+#form-codigo{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    flex-direction: column;
+   margin-top: 10px;
+
+}
+
+#smb-guardar{
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+

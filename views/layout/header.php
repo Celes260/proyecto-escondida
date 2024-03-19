@@ -25,7 +25,9 @@
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleVentas.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleRegistroCliente2.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleCarrito4.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/verificacionCodigo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
 
     <title>La escondida</title>
 </head>
