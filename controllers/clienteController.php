@@ -110,10 +110,13 @@ class clienteController{
                   }else{
                   
                     if(!isset($_SESSION['identity'])){
+                      //metodo que indica que los campos estan correctos para la creacion de usuario
+                      //aqui se verifica el email
+                      
+                      require_once 'mailer.php';
+                      
 
-                      $cliente->agregarCliente();
-                      $_SESSION['creacionUsuario'] = "Usuario creado exitosamente";
-                      require_once 'views/layout/inicio.php';
+
                     }else{
                       $cliente->setIdCliente($_SESSION['identity']->idCliente);
                       $cliente->actualizarCliente();
