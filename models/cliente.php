@@ -157,6 +157,15 @@ class cliente{
             return $editar;
 
           }
+
+          public function guardarCodigo($codigo){
+            $email = $this->getEmail();
+
+            $subir = $this->db->query("INSERT INTO codigos VALUES(NULL, '$email', '$codigo')");
+            
+
+
+          }
     }
     
 

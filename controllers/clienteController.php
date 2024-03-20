@@ -114,6 +114,7 @@ class clienteController{
                       //aqui se verifica el email
                       
                       $codigo= mt_rand(10000000, 99999999);
+                      $cliente->guardarCodigo($codigo);
                       require_once 'mailer.php';
                       require_once 'views/clientes/verificacionCodigo.php';
                       
