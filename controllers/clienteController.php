@@ -3,6 +3,7 @@ require_once 'models/cliente.php';
 class clienteController{
     public static function inicio(){
      
+      
          require_once 'views/layout/inicio.php';
 
        
@@ -19,6 +20,17 @@ class clienteController{
     public function registro(){
         require_once 'views/clientes/registro.php';
     }
+    public function viewCodigo(){
+        $email = urlencode($_GET['email']);
+        $nombre= urlencode($_GET['nmb']);
+        $apellidoP= urlencode($_GET['app']);
+        $apellidoM= urlencode($_GET['apm']);
+        $calle= urlencode($_GET['calle']);
+        $ciudad= urlencode($_GET['ciudad']);
+        $contraseña=$_GET['contra'];
+        $numeroCasa = urlencode($_GET['nm']);
+        require_once 'views/clientes/verificacionCodigo.php';
+  }
     public function login(){
         if(isset($_POST)){
             
@@ -72,13 +84,13 @@ class clienteController{
         $registro = array();
 
         if(isset($_POST)){
-          $nombre = ($_POST['nombre']!="")?$_POST['nombre'] :  $validacionUsuarios['nombre']="nombre vacio";
-          $apellidoP = ($_POST['apellidoP']!="")?$_POST['apellidoP']:  $validacionUsuarios['apellidoP']="Apellido paterno vacío";
-          $apellidoM = ($_POST['apellidoM']!="")?$_POST['apellidoM']:  $validacionUsuarios['apellidoM']="Apellido materno vacío";
+          $nombre = ($_POST['nombre']!="")?urlencode($_POST['nombre']) :  $validacionUsuarios['nombre']="nombre vacio";
+          $apellidoP = ($_POST['apellidoP']!="")?urlencode($_POST['apellidoP']):  $validacionUsuarios['apellidoP']="Apellido paterno vacío";
+          $apellidoM = ($_POST['apellidoM']!="")?urlencode($_POST['apellidoM']):  $validacionUsuarios['apellidoM']="Apellido materno vacío";
           $email = ($_POST['email']!="")?$_POST['email']:  $validacionUsuarios['email']="Email vacío";             
-          $calle = ($_POST['calle']!="")?$_POST['calle']: $validacionUsuarios['calle']="Calle vacía";
-          $ciudad = ($_POST['ciudad']!="")?$_POST['ciudad']: $validacionUsuarios['ciudad']="Ciudad vacía";
-          $numeroCasa = ($_POST['numeroCasa']!="")?$_POST['numeroCasa']: $validacionUsuarios['numeroCasa']="Numero de casa vacío";
+          $calle = ($_POST['calle'])!=""?urlencode($_POST['calle']): $validacionUsuarios['calle']="Calle vacía";  
+          $ciudad = ($_POST['ciudad']!="")?urlencode($_POST['ciudad']): $validacionUsuarios['ciudad']="Ciudad vacía";
+          $numeroCasa = ($_POST['numeroCasa']!="")?urlencode($_POST['numeroCasa']): $validacionUsuarios['numeroCasa']="Numero de casa vacío";
 
           if(!isset($_SESSION['identity'])){
 
@@ -112,6 +124,9 @@ class clienteController{
                     if(!isset($_SESSION['identity'])){
                       //metodo que indica que los campos estan correctos para la creacion de usuario
                       //aqui se verifica el email
+                      if(isset($_SESSION['sbm-mal'])){
+                        Utils::deleteSession("sbm-mal");
+                      }
                       
                       $codigo= mt_rand(10000000, 99999999);
                       $cliente->guardarCodigo($codigo);
@@ -176,7 +191,10 @@ class clienteController{
 
         public function verificacionCodigo(){
            $cliente = new cliente();
-
+           $email = $_GET['email'];
+           $codigo = $_POST['txtCodigo'];
+           $cliente->setEmail($email);
+           $cliente->verificarCodigo($codigo);
 
         }
 

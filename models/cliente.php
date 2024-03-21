@@ -166,6 +166,46 @@ class cliente{
 
 
           }
+
+
+          public function verificarCodigo($codigo){
+            $email = $this->getEmail();
+            $nombre = $_GET['nmb'];
+            $app = $_GET['app'];
+            $apm = $_GET['apm'];
+            $calle = $_GET['calle'];
+            $ciudad = $_GET['ciudad'];
+            $nm = $_GET['nm'];
+            $password = $_GET['contra'];
+            $contra = password_hash($password, PASSWORD_BCRYPT,['cost'=>4]);
+            $verificar = $this->db->query("SELECT * FROM codigos WHERE email = '{$email}' AND codigo = '{$codigo}'");
+            if($verificar->num_rows==1 ){
+                echo "<script>alert('Usuario registrado con exito')</script>";
+                
+                if(isset($_SESSION['sbm-mal'])){
+                    Utils::deleteSession("sbm-mal");
+                }
+                $agregar = $this->db->query( "INSERT INTO clientes VALUES(NULL, '$nombre', '$app', '$apm', '$ciudad', '$calle','$nm', '$contra', '$email')");
+                
+                require_once 'views/layout/login.php';
+
+            }else{
+                echo "codigo incorrecto";
+                $email = $this->getEmail();
+                $nombre = urlencode($_GET['nmb']);
+                $app = urlencode($_GET['app']);
+                $apm = urlencode($_GET['apm']);
+                $calle = urlencode($_GET['calle']);
+                $ciudad = urlencode($_GET['ciudad']);
+                $nm = urlencode($_GET['nm']);
+                $password = urlencode($_GET['contra']);
+                $_SESSION['sbm-mal']="Codigo erroneo";
+                header("Location: viewCodigo&email=$email&nmb=$nombre&app=$app&apm=$apm&calle=$calle&ciudad=$ciudad&nm=$nm&contra=$password");
+                
+            }
+        
+
+          }
     }
     
 
