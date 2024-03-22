@@ -35,7 +35,7 @@
                    
                     <input type="submit" value="ingresar" id="submitLogin">
                     
-                    <a href="">¿Haz olvidado la contraseña?</a>
+                    <a href="recuperarContraseña">¿Haz olvidado la contraseña?</a>
                     
                     <?php if(isset($_SESSION['loginAdmin'])):?>
                         <a href="<?=base_url?>cliente/loginVista" id="enlaceAdmin">iniciar como cliente</a>

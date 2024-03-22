@@ -20,6 +20,23 @@ class clienteController{
     public function registro(){
         require_once 'views/clientes/registro.php';
     }
+    public function recuperarContraseña(){
+      if(isset($_SESSION['sbm-mal'])){
+        Utils::deleteSession("sbm-mal");
+    }
+      require_once 'views/clientes/recuperarContrasena.php';
+
+    }
+
+    public function viewCambiandoContra(){
+      $email = $_GET['email'];
+      
+      
+      require_once 'views/clientes/cambiandoContrasena.php';
+
+
+    }
+
     public function viewCodigo(){
         $email = urlencode($_GET['email']);
         $nombre= urlencode($_GET['nmb']);
@@ -30,6 +47,12 @@ class clienteController{
         $contraseña=$_GET['contra'];
         $numeroCasa = urlencode($_GET['nm']);
         require_once 'views/clientes/verificacionCodigo.php';
+  }
+
+  public function viewCodigoPass(){
+    $email = trim(($_GET['email']));
+    require_once 'views/clientes/codigoRecovery.php';
+
   }
     public function login(){
         if(isset($_POST)){
@@ -195,6 +218,69 @@ class clienteController{
            $codigo = $_POST['txtCodigo'];
            $cliente->setEmail($email);
            $cliente->verificarCodigo($codigo);
+
+        }
+
+        public function recuperandoContraseña(){
+          $cliente = new cliente();
+          $email = $_POST['txtEmail'];
+          $cliente->setEmail($email);
+          $verificarEmail = $cliente->obtenerEmail();
+
+          if($verificarEmail->num_rows==1){
+          
+            
+            $codigo= mt_rand(10000, 99999);
+            $cliente->guardarCodigo($codigo);
+            require_once 'mailer.php';
+            require_once 'views/clientes/codigoRecovery.php';
+          }else{
+            echo "<script> alert('Correo no asocioado con una cuenta');</script>";
+            require_once 'views/clientes/recuperarContrasena.php';
+          }
+         
+
+
+
+
+        }
+
+        public function recoveryPassword(){
+          $cliente = new cliente();
+          $codigo = $_POST['txtCodigo'];
+          $email = $_GET['email'];
+          $cliente->setEmail($email);
+          $cliente->verificarCodigoPassword($codigo);
+
+
+
+
+        }
+
+        public function cambioContra(){
+          $cliente = new cliente();
+          $email = $_GET['email'];
+          $cliente->setEmail($email);
+          $password = trim($_POST['txtContra']);
+          $confirmacionPassword = trim($_POST['txtConfirmacionContra']);
+
+          if($password !="" && $confirmacionPassword != ""){
+            if($password == $confirmacionPassword){
+              $cliente->setContraseña($password);
+              $cliente->cambiandoContra();
+
+            }else{
+              $_SESSION["sbm-mal"] = 'Contraseñas no coinciden';
+              header("Location: viewCambiandoContra&email=$email");
+            }
+
+
+          }else{
+            $_SESSION["sbm-mal"] = 'No debe dejar campos vacios';
+            header("Location: viewCambiandoContra&email=$email");
+          }
+
+
 
         }
 

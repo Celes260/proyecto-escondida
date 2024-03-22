@@ -190,7 +190,7 @@ class cliente{
                 require_once 'views/layout/login.php';
 
             }else{
-                echo "codigo incorrecto";
+               
                 $email = $this->getEmail();
                 $nombre = urlencode($_GET['nmb']);
                 $app = urlencode($_GET['app']);
@@ -204,6 +204,47 @@ class cliente{
                 
             }
         
+
+          }
+
+
+          public function codigoRecuperacion($codigo){
+            $email = $this->getEmail();
+
+            $query= "INSERT INTO codigos VALUES(null, '$email', '$codigo');";
+
+          }
+
+          public function verificarCodigoPassword($codigo){
+            $email = $this->getEmail();
+           
+            $verificar = $this->db->query("SELECT * FROM codigos WHERE email = '{$email}' AND codigo = '{$codigo}'");
+            if($verificar->num_rows==1 ){
+                
+
+                require_once 'views/clientes/cambiandoContrasena.php';
+
+            }else{
+             
+                $_SESSION['sbm-mal']="Codigo erroneo";
+                header("Location: viewCodigoPass&email=$email");
+                
+            }
+
+
+          }
+
+          public function cambiandoContra(){
+            $contraseña = $this->getContraseña();
+            $update = $this->db->query("UPDATE clientes SET contraseña = '$contraseña' WHERE email = '{$this->getEmail()}';");
+
+            if($update){
+                echo "<script>alert('Contraseña actualizada con exito')</script>";
+                require_once 'views/layout/login.php';
+            }else{
+                echo "error actualizando contraseña";
+            }
+
 
           }
     }
