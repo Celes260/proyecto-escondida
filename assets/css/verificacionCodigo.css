@@ -49,3 +49,22 @@
 
 }
 
+
+@media screen and (max-width:500px){
+    #bx-generalVerificacion h3, p{
+        font-size: 23px;
+
+    }
+
+    #form-codigo{
+        width: 80%;
+      
+
+    }
+    
+    #txtCodigo{
+        width: 100%;
+    }
+
+
+}
