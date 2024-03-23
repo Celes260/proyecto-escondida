@@ -5,10 +5,7 @@
     <?php
         if(isset($_GET['email'])){
             $email = $_GET['email'];
-            echo "<p>$email</p>";
-        }else{
-           echo "<p>$email</p>";
-
+            
         }
     ?>
  

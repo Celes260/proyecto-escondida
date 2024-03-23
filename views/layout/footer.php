@@ -23,7 +23,7 @@
                 <div>
                     <a class="p-footer" href="https://www.facebook.com/profile.php?id=100070046720849" target="_blank"><img src="<?=base_url?>assets/imagenes/facebook.png" alt="facebook" class="pngRedes">La Escondida - Santas Marias</a>
                     <a class="p-footer" href="https://www.instagram.com/escondida_stasmarias/" target="_blank"><img src="<?=base_url?>assets/imagenes/insta.png" alt="Instagram" class="pngRedes">escondida_stasmarias</a>
-                    <p class="p-footer" id="w-footer"><img src="<?=base_url?>assets/imagenes/whatsapp.png" alt="whatsapp"class="pngRedes">4591349809</p>
+                    <a class="p-footer" id="w-footer"><img src="<?=base_url?>assets/imagenes/whatsapp.png" alt="whatsapp"class="pngRedes">4591349809</a>
                 </div>
 
             </div>

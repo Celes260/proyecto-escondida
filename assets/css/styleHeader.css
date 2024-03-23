@@ -49,12 +49,14 @@ body{
     font-size: 25px;
     display: flex;
     color: white;
+    cursor: pointer;
 }
 #header ul li a:hover{
     color: #ccbb83;
 }
 #logo{
-    width: 80px;
+    width: 90px;
+    height: 11vh;
 }
 
 #ulAdmin{
@@ -67,14 +69,11 @@ nav ul>li:hover #ulAdmin{
     display: block !important;
     width: 250px;
     height: 80px;
-    
-    z-index: 1;
     background-color: #040402;
     transform: all 300ms;
     color: white;
     margin-left: -50px;
-    z-index: 1;
-   
+    z-index: 2;
     margin-top:30px;
     text-align: right;
 }
@@ -83,14 +82,11 @@ nav ul>li:hover #ulAdmin{
     display: block !important;
     width: 250px;
     height: 120px;
-    
-    z-index: 1;
     background-color: #040402;
     transform: all 300ms;
     color: white;
     margin-left: -50px;
-    z-index: 1;
-   
+    z-index: 2;
     margin-top:30px;
     text-align: right;
 }
@@ -104,9 +100,15 @@ nav ul>li:hover #ulAdmin a:first-child{
 }
 nav ul>li:hover #ulAdmin a:hover{
     color: #ccbb83;
-  
-    
+}
 
+#liCliente:hover{
+    color: #ccbb83;
+   
+}
+
+#liCliente{
+    cursor: pointer;
 }
 
 .bx-menu{

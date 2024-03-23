@@ -45,6 +45,10 @@ $(document).ready(function(){
         slidesPerView: "auto",
         loop:true,
 
+        autoplay: {
+          delay: 5000,
+        },
+
       
 
 
