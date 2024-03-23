@@ -11,20 +11,20 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleHeader.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleLoginVista1.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleAdministrar1.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleContacto1.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleFooter1.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleLoginVista.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleAdministrar.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleContacto.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleFooter.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleInicio.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleMesas.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleMenu1.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleMenu.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleCrearPlatillos.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/stylePlatillos1.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/stylePlatillos.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleCobrar.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleNotas.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleVentas.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleRegistroCliente2.css">
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleCarrito4.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleRegistroCliente.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleCarrito.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/verificacionCodigo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     
