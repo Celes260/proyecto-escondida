@@ -10,7 +10,7 @@
     <script src="<?=base_url?>Javascript/main.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="<?=base_url?>assets/css/styleHeader0.css">
+    <link rel="stylesheet" href="<?=base_url?>assets/css/styleHeader.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleLoginVista1.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleAdministrar1.css">
     <link rel="stylesheet" href="<?=base_url?>assets/css/styleContacto1.css">
