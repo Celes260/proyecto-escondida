@@ -5,14 +5,14 @@
                     <!-- Slides -->
                     <div class="new__content swiper-slide ">
                         <div class="listings ">
-                            <img src="<?=base_url?>assets/imagenes/escondidaPrincipal.jpg" alt="">
+                            <img src="<?=base_url?>assets/imagenes/escondidaPrincipal.webp" alt="">
                            
                         </div>
                     </div>
 
                     <div class="new__content swiper-slide ">
                         <div class="listings ">
-                            <img src="<?=base_url?>assets/imagenes/escondidaAtardecer.jpg"alt="">
+                            <img src="<?=base_url?>assets/imagenes/escondidaAtardecer.webp"alt="">
                            
                         </div>
                     </div>
@@ -29,17 +29,12 @@
 
                     <div class="new__content swiper-slide ">
                         <div class="listings ">
-                            <img src="<?=base_url?>assets/imagenes/escondida1.jpg" alt="">
+                            <img src="<?=base_url?>assets/imagenes/escondidaAtardecer2.jpg" alt="">
                           
                         </div>
                     </div>
 
-                    <div class="new__content swiper-slide ">
-                        <div class="listings ">
-                            <img src="<?=base_url?>assets/imagenes/escondida4.jpg" alt="">
-                           
-                        </div>
-                    </div>
+                    
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -70,8 +65,8 @@
                     <img src="<?=base_url?>assets/imagenes/escondidaNoche.jpg" alt="imagen noche" id="escondidaNoche">
                 </div>
                 <div id="divDobleImagen">
-                    <img src="<?=base_url?>assets/imagenes/escondida2.jpg" alt="imagen bowl" id="imagenBowl" class="img-itr">
-                    <img src="<?=base_url?>assets/imagenes/escondida4.jpg" alt="imagen alitas" id="imagenAlitas" class="img-itr">
+                    <img src="<?=base_url?>assets/imagenes/escondidaCervesa.jpg" alt="imagen bowl" id="imagenBowl" class="img-itr">
+                    <img src="<?=base_url?>assets/imagenes/alitas.jpg" alt="imagen alitas" id="imagenAlitas" class="img-itr">
 
                 </div>
 
